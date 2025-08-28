@@ -18,6 +18,10 @@ body {
 p {
   text-align: justify; /* ✅ Ensure paragraphs are justified */
 }
+/* ❌ Remove justification inside contact section */
+#contact, #contact p {
+  text-align: center !important;
+}
 .fade-section {
   opacity: 0;
   transform: translateY(20px);
@@ -165,7 +169,7 @@ path: 'https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json'
 <div class="space-y-6">
 <div class="p-6 rounded shadow border border-gray-200">
 <h4 class="text-xl font-semibold mb-2">Data Analyst Intern - EdgeLine Tech Academy</h4>
-<p class="text-gray-700">o	Worked with 3+ cross functional teams to gather requirements, shape project scope and align goals with business needs, ensuring strong collaboration and successful delivery.
+<p class="text-gray-700">	Worked with 3+ cross functional teams to gather requirements, shape project scope and align goals with business needs, ensuring strong collaboration and successful delivery.
   Created detailed reports and presentations using PowerPoint that simplified complex findings and gave stakeholders clear actionable recommendations.
   Improved data collection and reporting processes, cutting processing time and increasing efficiency. 
 </p>
@@ -232,4 +236,5 @@ sections.forEach(section => observer.observe(section));
 
 </body>
 </html>
+
 
