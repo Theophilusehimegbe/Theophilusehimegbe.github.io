@@ -11,24 +11,28 @@
 <!-- Fade effect CSS -->
 <style>
 body {
-background-color: #f9f9f9;
-color: #1f2937;
+  background-color: #f9f9f9;
+  color: #1f2937;
+  text-align: justify; /* ✅ Justify all text */
+}
+p {
+  text-align: justify; /* ✅ Ensure paragraphs are justified */
 }
 .fade-section {
-opacity: 0;
-transform: translateY(20px);
-transition: opacity 1s ease-out, transform 1s ease-out;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .fade-section.visible {
-opacity: 1;
-transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 nav, .bg-gray-800, .bg-gray-700, .bg-gray-900 {
-background-color: #ffffff !important;
-color: #1f2937 !important;
+  background-color: #ffffff !important;
+  color: #1f2937 !important;
 }
 a, a:hover {
-color: #f59e0b;
+  color: #f59e0b;
 }
 </style>
 </head>
@@ -228,3 +232,4 @@ sections.forEach(section => observer.observe(section));
 
 </body>
 </html>
+
